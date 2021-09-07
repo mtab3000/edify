@@ -52,7 +52,8 @@ The unit will now pull data every 60 minutes and update the display.
 You can buy a fully assembled Audrey or frames at [veeb.ch](https://www.veeb.ch/store/p/neverending-quotes)
 
 # Service
-``cat <<EOF | sudo tee /etc/systemd/system/edify.service
+```
+cat <<EOF | sudo tee /etc/systemd/system/edify.service
 [Unit]
 Description=edify
 After=network.target
@@ -68,7 +69,8 @@ User=pi
 [Install]
 WantedBy=multi-user.target
 EOF
-``
+```
+
 # Troubleshooting
 
 Some people have had errors on a clean install of Rasbian Lite on Pi. If you do, run:
